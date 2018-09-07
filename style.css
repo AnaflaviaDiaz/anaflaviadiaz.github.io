@@ -1,0 +1,29 @@
+.main-color {
+	background-color: #FFE2A8;
+}
+
+p {
+	text-align: justify;
+}
+
+.inline-content {
+	display: flex;
+}
+
+.black-letter {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.preview-project {
+	width: 300px;
+	height: 250px;
+	border-radius: 10%;
+}
+
+.href {
+	color: #039be5;
+}
