@@ -27,3 +27,11 @@ p {
 .href {
 	color: #039be5;
 }
+
+.socials img {
+	margin-right: 30px;
+}
+
+.show-projects {
+	background-color: black;
+}
