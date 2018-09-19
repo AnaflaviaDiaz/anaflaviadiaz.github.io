@@ -5,140 +5,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Anaflavia Díaz M.</title>
-	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/materialize.min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="ad.png">
+	<title>Document</title>
 </head>
 
 <body>
-	<div class="parallax-container">
-		<div class="parallax"><img src="assets/team.jpg"></div>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo"><img class="img-logo" src="ad.png" alt=""></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="sass.html">Portafolio</a></li>
+					<!-- <li><a href="badges.html">Components</a></li> -->
+					<li><a href="collapsible.html">Skills</a></li>
+					<li><a href="mobile.html">Sobre Mí</a></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
-	<div class="section white">
-		<div class="row container">
-			<h2 class="header">Anaflavia Díaz Martel</h2>
-			<h5>FRONT-END DEVELOPER</h5>
-			<p class="grey-text text-darken-3 lighten-3">Me gusta programar la interacción del usuario con la aplicación para
-				brindar calidad en la experiencia, por lo que ante cualquier problema o inconveniente determino cuál es la mejor
-				solución y la aplico. Siempre he creído que es fundamental el trabajo en equipo y ahora lo potencio gracias a
-				metodologías ágiles como Kanban y Scrum. Pongo al máximo todas mis capacidades para sacar adelante la tarea
-				encomendada donde trato de desempeñarla de la mejor manera. Soy organizada, responsable y sobre todo tengo una gran
-				actitud para adaptarme a los retos que se vengan.
-				Mi objetivo es aportar y comprometerme en un lugar donde pueda desarrollarme y crecer profesionalmente por lo que
-				busco oportunidades que me permitan hacerlo. Mi aspiración a futuro es ser una Full-stack.</p>
+
+	<!-- version mobile -->
+	<ul class="sidenav" id="mobile-demo">
+		<li><a href="sass.html">Portafolio</a></li>
+		<!-- <li><a href="badges.html">Components</a></li> -->
+		<li><a href="collapsible.html">Skills</a></li>
+		<li><a href="mobile.html">Sobre Mí</a></li>
+	</ul>
+
+	<header>
+		<div class="parallax-container">
+			<div class="parallax"><img src="assets/ordenador.jpg"></div>
 		</div>
-	</div>
-	<div class="parallax-container">
-		<div class="parallax"><img src="assets/ordenador.jpg"></div>
-	</div>
-	<div class="section white">
-		<div class="row container inline-content">
-			<!-- tech -->
-			<div class="col s6">
-				<h4>Conocimientos Técnicos</h4>
-				<div class="center">
-					<i class="medium material-icons">code</i>
-				</div>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Javascript</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>ES6</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Git</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>NPM</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>React</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Angular</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Bootstrap</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Materialize</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Jest</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Mocha</p>
-			</div>
-			<!-- soft -->
-			<div class="col s6">
-				<h4>Capacidades</h4>
-				<div class="center">
-					<i class="medium material-icons">lightbulb_outline</i>
-				</div>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Trabajo en Equipo</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Compromiso</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Adaptabilidad</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Autoaprendizaje</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Puntualidad</p>
-				<p class="inline-content"><i class="material-icons">ac_unit</i>Responsabilidad</p>
-			</div>
-		</div>
-	</div>
-	<div class="section white">
-		<div class="row container">
-			<h4>Mis Proyectos</h4>
-			<!-- salutem -->
-			<div class="col s6">
-				<h5 class="black-letter">Salutem</h5>
-				<p>Una red social sobre Salud</p>
-				<img class="materialboxed preview-project" src="assets/my-proyects/salutem.jpg" alt="salutem">
-				<div class="row">
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-demo-salutem">Ver Demo</button>
-					</div>
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-repo-salutem">Código en GitHub</button>
-					</div>
-				</div>
-			</div>
-			<div class="col s6">
-				<h5 class="black-letter">FoodMap</h5>
-				<p>Encontrar restaurantes en Miraflores</p>
-				<img class="materialboxed preview-project" src="assets/my-proyects/foodmap.png" alt="foodmap">
-				<div class="row">
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-demo-foodmap">Ver Demo</button>
-					</div>
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-repo-foodmap">Código en GitHub</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row container">
-			<div class="col s6">
-				<h5 class="black-letter">Visitor</h5>
-				<p>Registro de Visitas</p>
-				<img class="preview-project" src="assets/my-proyects/visit.PNG" alt="visitor">
-				<div class="row">
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-demo-visitor">Ver Demo</button>
-					</div>
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-repo-visitor">Código en GitHub</button>
-					</div>
-				</div>
-			</div>
-			<div class="col s6">
-				<h5 class="black-letter">EduTic</h5>
-				<p>Red Social de Educación con Angular</p>
-				<img class="preview-project" src="assets/my-proyects/edutic.png" alt="edutic">
-				<div class="row">
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-demo-edutic">Ver Demo</button>
-					</div>
-					<div class="col s6">
-						<button class="waves-effect btn show-projects" id="btn-repo-edutic">Código en GitHub</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="parallax-container">
-		<div class="parallax"><img src="assets/laptop-juice.jpg"></div>
-		<div class="container socials">
-			<h5>Contacto</h5>
-			<img id="sn-github" src="assets/social-networks/logo-de-github.png" alt="github">
-			<img id="sn-linkedin" src="assets/social-networks/boton-linkedin.png" alt="linkedin">
-			<img id="sn-email" src="assets/social-networks/en.png" alt="email">
-			<img id="sn-cv" src="assets/social-networks/cv.png" alt="cv">
-		</div>
-	</div>
-	<script type="text/javascript" src="./app.js"></script>
+	</header>
+	<script src="js/materialize.min.js"></script>
+	<script src="app.js"></script>
 </body>
 
 </html>

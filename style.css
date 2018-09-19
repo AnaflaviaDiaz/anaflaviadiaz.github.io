@@ -1,4 +1,4 @@
-.main-color {
+/* .main-color {
 	background-color: #FFE2A8;
 }
 
@@ -34,4 +34,30 @@ p {
 
 .show-projects {
 	background-color: black;
+} */
+
+.brand-logo {
+	font-size: 4.5rem !important;
+	font-weight: bold !important;
+	font-family: Lato;
+	margin-left: 30px;
+	/* sans-serif */
 }
+
+.nav-items {
+	/* font-weight: bold !important; */
+	font-size: 1.5rem !important;
+}
+
+.img-logo {
+	width: 12%;
+}
+
+.parallax-container {
+	/* opacity: 1; */
+}
+
+/* color principal */
+/* background-color: #809eb2; */
+
+/* oscurece = background-color: rgba(0, 0, 0, 0.1) */
