@@ -1,64 +1,43 @@
-/* .main-color {
-	background-color: #FFE2A8;
+/* ----------colores------------ */
+.primary-color {
+	background-color: #495a66;
+}
+.secondary-color {
+	background-color: #809eb2;
 }
 
-p {
-	text-align: justify;
-}
-
-.inline-content {
-	display: flex;
-}
-
-.black-letter {
-	font-weight: bold;
-}
-
-.center {
-	text-align: center !important;
-}
-
-.preview-project {
-	width: 300px;
-	height: 250px;
-	border-radius: 10%;
-}
-
-.href {
-	color: #039be5;
-}
-
-.socials img {
-	margin-right: 30px;
-}
-
-.show-projects {
-	background-color: black;
-} */
-
+/*------- section navbar----------- */
 .brand-logo {
 	font-size: 4.5rem !important;
 	font-weight: bold !important;
 	font-family: Lato;
 	margin-left: 30px;
-	/* sans-serif */
 }
-
 .nav-items {
-	/* font-weight: bold !important; */
 	font-size: 1.5rem !important;
 }
-
-.img-logo {
+.img-logo-nav {
 	width: 12%;
 }
 
+/* navbar-mobile */
+ul h4 {
+	margin-left: 26px;
+}
+.brand-logo-mobile {
+	text-align: center;
+	align-content: center
+}
+.img-logo-mobile {
+	width: 30%;
+}
+
+/* ---------section header----------- */
 .presentation {
 	font-family: Lato;
 	color: white;
 	text-align: center;
 	margin-top: 10%;
-	/* opacity: 0.8; */
 }
 
 .presentation h1 {
@@ -66,33 +45,26 @@ p {
 	font-weight: bold !important;
 }
 
+/* ----- section portfolio-------- */
 .title {
 	margin-top: -50px;
 }
-
-.primary-color {
-	background-color: #495a66;
-}
-
-.secondary-color {
-	background-color: #809eb2;
-}
-
 .screen-mobile {
-	width: 50%;
+	width: 60%;
 }
-
 .screen-desktop {
 	width: 100%;
 }
-
 .proy {
 	text-align: justify;
 }
 
-/* .parallax { */
-/* opacity: 0.7; */
-/* } */
+/* ------------section skills---------- */
+
+
+
+
+
 
 /* color principal */
 /* background-color: #809eb2; */
