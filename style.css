@@ -1,23 +1,29 @@
 /* ----------colores------------ */
-.primary-color {
+.bg-primary {
 	background-color: #495a66;
 }
-.secondary-color {
-	background-color: #809eb2;
+.bg-secondary {
+	/* background-color: #809eb2; */
+	background-color: #e2e2e2;
 }
+
+section[class^="bg"] {
+	padding: 42px 0;
+}
+
+
 
 /*------- section navbar----------- */
 .brand-logo {
 	font-size: 4.5rem !important;
 	font-weight: bold !important;
 	font-family: Lato;
-	margin-left: 30px;
 }
 .nav-items {
 	font-size: 1.5rem !important;
 }
 .img-logo-nav {
-	width: 12%;
+	width: 50px;
 }
 
 /* navbar-mobile */
@@ -33,6 +39,14 @@ ul h4 {
 }
 
 /* ---------section header----------- */
+.background-main {
+	background-image: url('https://user-images.githubusercontent.com/15807118/45848094-d6674600-bcf2-11e8-8787-25df72d563ce.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+
 .presentation {
 	font-family: Lato;
 	color: white;
@@ -46,9 +60,9 @@ ul h4 {
 }
 
 /* ----- section portfolio-------- */
-.title {
+/* .title {
 	margin-top: -50px;
-}
+} */
 .screen-mobile {
 	width: 60%;
 }
@@ -58,9 +72,15 @@ ul h4 {
 .proy {
 	text-align: justify;
 }
+.spaces-left {
+	margin: 0 5px;
+	font-style: italic;
+}
 
 /* ------------section skills---------- */
-
+.unity {
+	color: #495a66;
+}
 
 
 
