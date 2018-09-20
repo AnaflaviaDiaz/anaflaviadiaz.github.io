@@ -53,8 +53,32 @@ p {
 	width: 12%;
 }
 
-.parallax-container {
-	/* opacity: 1; */
+.presentation {
+	font-family: Lato;
+	color: white;
+	text-align: center;
+	margin-top: 10%;
+	/* opacity: 0.8; */
+}
+
+.presentation h1 {
+	font-size: 4.8rem !important;
+	font-weight: bold !important;
+}
+
+.title {
+	margin-top: -50px;
+}
+
+.primary-color {
+	background-color: #495a66;
+}
+.secondary-color {
+	background-color: #809eb2;
+}
+
+.parallax {
+	/* opacity: 0.7; */
 }
 
 /* color principal */
