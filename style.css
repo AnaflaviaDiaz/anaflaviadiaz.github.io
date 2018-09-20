@@ -73,21 +73,26 @@ p {
 .primary-color {
 	background-color: #495a66;
 }
+
 .secondary-color {
 	background-color: #809eb2;
 }
 
 .screen-mobile {
-	width: 80%;
+	width: 50%;
+}
+
+.screen-desktop {
+	width: 100%;
 }
 
 .proy {
-	display: flex
+	text-align: justify;
 }
 
-.parallax {
-	/* opacity: 0.7; */
-}
+/* .parallax { */
+/* opacity: 0.7; */
+/* } */
 
 /* color principal */
 /* background-color: #809eb2; */
