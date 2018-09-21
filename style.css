@@ -6,12 +6,12 @@
 	/* background-color: #809eb2; */
 	background-color: #e2e2e2;
 }
-
+.bg-royal {
+	background-color: #f1f1f1;
+}
 section[class^="bg"] {
 	padding: 42px 0;
 }
-
-
 
 /*------- section navbar----------- */
 .brand-logo {
@@ -25,6 +25,9 @@ section[class^="bg"] {
 .img-logo-nav {
 	width: 50px;
 }
+ul li a:hover{
+	background-color: #a1a1a1;
+}
 
 /* navbar-mobile */
 ul h4 {
@@ -36,6 +39,13 @@ ul h4 {
 }
 .img-logo-mobile {
 	width: 30%;
+}
+.sidenav li>a:hover {
+	background-color: #a1a1a1;
+	color: black;
+}
+.sidenav li>a, ul h4 {
+	color: white;
 }
 
 /* ---------section header----------- */
@@ -75,7 +85,7 @@ ul h4 {
 }
 
 /* ------------section skills---------- */
-.unity {
+.primary-words {
 	color: #495a66;
 }
 
