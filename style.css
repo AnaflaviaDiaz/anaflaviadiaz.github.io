@@ -50,7 +50,7 @@ ul h4 {
 
 /* ---------section header----------- */
 .background-main {
-	background-image: url('https://user-images.githubusercontent.com/15807118/45848094-d6674600-bcf2-11e8-8787-25df72d563ce.jpg');
+	background-image: url('assets/background/businessblur.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -90,11 +90,31 @@ ul h4 {
 	display: flex;
 }
 
-
-
+/* ------------contactme---------- */
+#linkedin:hover, #github:hover, #cv:hover, #gmail:hover {
+  cursor: pointer;
+}
 
 
 /* color principal */
 /* background-color: #809eb2; */
 
 /* oscurece = background-color: rgba(0, 0, 0, 0.1) */
+.prueba {
+  background-color: rgba(0, 56, 63, 0.5);
+  height: 100vh;
+}
+
+.pad-49 {
+  padding: 49px 0 !important;
+}
+
+.spaces-title {
+  margin-bottom: 50px !important;
+}
+.spaces-description {
+  margin: 40px 0;
+}
+.spaces-skills {
+  margin: 50px 0;
+}
