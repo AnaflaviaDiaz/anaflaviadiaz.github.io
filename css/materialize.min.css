@@ -2491,9 +2491,11 @@ nav,
 }
 
 .divider {
-	height: 1px;
+	height: 4px;
 	overflow: hidden;
-	background-color: #e0e0e0
+  background-color: #e0e0e0;
+  width: 70%;
+  margin: 0 15%;
 }
 
 blockquote {
