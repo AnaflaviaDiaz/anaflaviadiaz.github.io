@@ -56,7 +56,6 @@ ul h4 {
 	background-position: center center;
 	height: 100vh;
 }
-
 .presentation {
 	font-family: Lato;
 	color: white;
@@ -65,7 +64,6 @@ ul h4 {
 	top: 40%;
 	position: absolute;
 }
-
 .presentation h1 {
 	font-size: 4.8rem !important;
 	font-weight: bold !important;
@@ -87,6 +85,9 @@ ul h4 {
 /* ------------section skills---------- */
 .primary-words {
 	color: #495a66;
+}
+.flex {
+	display: flex;
 }
 
 
