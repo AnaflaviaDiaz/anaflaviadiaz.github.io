@@ -1,67 +1,75 @@
-const github = document.getElementById('sn-github');
-const linkedin = document.getElementById('sn-linkedin');
-const email = document.getElementById('sn-email');
-const cv = document.getElementById('sn-cv');
-const demoSalutem = document.getElementById('btn-demo-salutem');
-const demoFoodmap = document.getElementById('btn-demo-foodmap');
-const demoVisitor = document.getElementById('btn-demo-visitor');
-const demoEdutic = document.getElementById('btn-demo-edutic');
-const repoSalutem = document.getElementById('btn-repo-salutem');
-const repoFoodmap = document.getElementById('btn-repo-foodmap');
-const repoVisitor = document.getElementById('btn-repo-visitor');
-const repoEdutic = document.getElementById('btn-repo-edutic');
+// email.addEventListener('click', () => {
+// 	window.open('', '_blank');
+// });
 
-email.addEventListener('click', () => {
-	window.open('', '_blank');
-});
+// cv.addEventListener('click', () => {
+// 	window.open('https://drive.google.com/file/d/18uThgz23Ym77bPXhyskluYvJqKICGzvh/view', '_blank');
+// });
 
-cv.addEventListener('click', () => {
-	window.open('https://drive.google.com/file/d/18uThgz23Ym77bPXhyskluYvJqKICGzvh/view', '_blank');
-});
+// github.addEventListener('click', () => {
+// 	window.open('https://github.com/AnaflaviaDiaz', '_blank');
+// });
 
-github.addEventListener('click', () => {
-	window.open('https://github.com/AnaflaviaDiaz', '_blank');
-});
+// linkedin.addEventListener('click', () => {
+// 	window.open('https://www.linkedin.com/in/anaflavia-diaz/', '_blank');
+// });
 
-linkedin.addEventListener('click', () => {
-	window.open('https://www.linkedin.com/in/anaflavia-diaz/', '_blank');
-});
 
-demoSalutem.addEventListener('click', () => {
-	window.open('https://anaflaviadiaz.github.io/lim-2018-05-bc-core-am-socialnetwork/src/', '_blank');
-});
+const repoSalutem = 'https://github.com/AnaflaviaDiaz/lim-2018-05-bc-core-am-socialnetwork';
+const repoFoodmap = 'https://github.com/AnaflaviaDiaz/lim-2018-01-foodmap';
+const repoVisitor = 'https://github.com/AnaflaviaDiaz/wework';
+const repoEdutic = 'https://github.com/AnaflaviaDiaz/lim-2018-01-social-network-frameworks';
 
-demoFoodmap.addEventListener('click', () => {
-	window.open('https://anaflaviadiaz.github.io/lim-2018-01-foodmap/', '_blank');
-});
+const demoSalutem = 'https://anaflaviadiaz.github.io/lim-2018-05-bc-core-am-socialnetwork/src/';
+const demoFoodmap = 'https://anaflaviadiaz.github.io/lim-2018-01-foodmap/';
+const demoVisitor = 'https://anaflaviadiaz.github.io/wework/src/';
+const demoEdutic = 'https://anaflaviadiaz.github.io/lim-2018-01-social-network-frameworks/my-app/login';
 
-demoVisitor.addEventListener('click', () => {
-	window.open('https://anaflaviadiaz.github.io/wework/src/', '_blank');
-});
+const linkLinkedln = 'https://www.linkedin.com/in/anaflavia-diaz/';
+const linkGithub = 'https://github.com/AnaflaviaDiaz';
+const linkCV = 'https://drive.google.com/file/d/1RZeXPyFhJYbmDWBR6km_6FYPbvzHrsZj/view';
 
-demoEdutic.addEventListener('click', () => {
-	window.open('', '_blank');
-});
+const btnRepoSalutem = document.getElementById('btn-repo-salutem');
+const btnRepoFoodmap = document.getElementById('btn-repo-foodmap');
+const btnRepoVisitor = document.getElementById('btn-repo-visitor');
+const btnRepoEdutic = document.getElementById('btn-repo-edutic');
 
-repoSalutem.addEventListener('click', () => {
-	window.open('https://github.com/AnaflaviaDiaz/lim-2018-05-bc-core-am-socialnetwork', '_blank');
-});
+const btnDemoSalutem = document.getElementById('btn-demo-salutem');
+const btnDemoFoodmap = document.getElementById('btn-demo-foodmap');
+const btnDemoVisitor = document.getElementById('btn-demo-visitor');
+const btnDemoEdutic = document.getElementById('btn-demo-edutic');
 
-repoFoodmap.addEventListener('click', () => {
-	window.open('https://github.com/AnaflaviaDiaz/lim-2018-01-foodmap', '_blank');
-});
+const btnLinkedln = document.getElementById('linkedin');
+const btnGithub = document.getElementById('github');
+const btnCV = document.getElementById('cv');
+const btnEmail = document.getElementById('gmail');
 
-repoVisitor.addEventListener('click', () => {
-	window.open('https://github.com/AnaflaviaDiaz/wework', '_blank');
-});
+const openPage = (route) => {
+  window.open(route, '_blank');
+};
 
-repoEdutic.addEventListener('click', () => {
-	window.open('', '_blank');
-});
+const sendEmail = () => {
+  
+}
+
+btnRepoSalutem.addEventListener('click', () => openPage(repoSalutem));
+btnRepoFoodmap.addEventListener('click', () => openPage(repoFoodmap));
+btnRepoVisitor.addEventListener('click', () => openPage(repoVisitor));
+btnRepoEdutic.addEventListener('click', () => openPage(repoEdutic));
+
+btnDemoSalutem.addEventListener('click', () => openPage(demoSalutem));
+btnDemoFoodmap.addEventListener('click', () => openPage(demoFoodmap));
+btnDemoVisitor.addEventListener('click', () => openPage(demoVisitor));
+btnDemoEdutic.addEventListener('click', () => openPage(demoEdutic));
+
+btnLinkedln.addEventListener('click', () => openPage(linkLinkedln));
+btnGithub.addEventListener('click', () => openPage(linkGithub));
+btnCV.addEventListener('click', () => openPage(linkCV));
+// btnEmail.addEventListener('click', () => openPage(linkLinkedln));
 
 document.addEventListener('DOMContentLoaded', function () {
-	const elems = document.querySelectorAll('.parallax');
-	const elemsImg = document.querySelectorAll('.materialboxed');
-	M.Parallax.init(elems);
-	M.Materialbox.init(elemsImg);
+  const elems = document.querySelectorAll('.sidenav');
+  const elemsP = document.querySelectorAll('.parallax');
+  M.Parallax.init(elemsP);
+  M.Sidenav.init(elems);
 });

@@ -1,37 +1,129 @@
-.main-color {
-	background-color: #FFE2A8;
+/* ----------colores------------ */
+.bg-primary {
+	background-color: #495a66;
+}
+.bg-secondary {
+	/* background-color: #809eb2; */
+	background-color: #e2e2e2;
+}
+.bg-royal {
+	background-color: #f1f1f1;
+}
+section[class^="bg"] {
+	padding: 42px 0;
 }
 
-p {
-	text-align: justify;
+/*------- section navbar----------- */
+.brand-logo {
+	font-size: 4.5rem !important;
+	font-weight: bold !important;
+	font-family: Lato;
+}
+.nav-items {
+	font-size: 1.5rem !important;
+}
+.img-logo-nav {
+	width: 50px;
+}
+ul li a:hover{
+	background-color: #a1a1a1;
 }
 
-.inline-content {
+/* navbar-mobile */
+ul h4 {
+	margin-left: 26px;
+}
+.brand-logo-mobile {
+	text-align: center;
+	align-content: center
+}
+.img-logo-mobile {
+	width: 30%;
+}
+.sidenav li>a:hover {
+	background-color: #a1a1a1;
+	color: black;
+}
+.sidenav li>a, ul h4 {
+	color: white;
+}
+
+/* ---------section header----------- */
+.background-main {
+	background-image: url('assets/background/businessblur.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+.presentation {
+	font-family: Lato;
+	color: white;
+	text-align: center;
+	width: 100%;
+	top: 40%;
+	position: absolute;
+}
+.presentation h1 {
+	font-size: 4.8rem !important;
+	font-weight: bold !important;
+	margin: 0;
+}
+
+/* ----- section portfolio-------- */
+.screen-mobile {
+	width: 60%;
+}
+.screen-desktop {
+	width: 100%;
+}
+.spaces-left {
+	margin: 0 5px;
+	font-style: italic;
+}
+
+/* ------------section skills---------- */
+.primary-words {
+	color: #495a66;
+}
+.flex {
 	display: flex;
 }
 
-.black-letter {
-	font-weight: bold;
+/* ------------contactme---------- */
+#linkedin:hover, #github:hover, #cv:hover, #gmail:hover {
+  cursor: pointer;
 }
 
-.center {
-	text-align: center !important;
+
+/* color principal */
+/* background-color: #809eb2; */
+
+/* oscurece = background-color: rgba(0, 0, 0, 0.1) */
+.prueba {
+  background-color: rgba(0, 56, 63, 0.5);
+  height: 100vh;
 }
 
-.preview-project {
-	width: 300px;
-	height: 250px;
-	border-radius: 10%;
+.pad-49 {
+  padding: 49px 0 !important;
 }
 
-.href {
-	color: #039be5;
+.spaces-title {
+  margin-bottom: 50px !important;
 }
-
-.socials img {
-	margin-right: 30px;
+.spaces-description {
+  margin: 40px 0;
 }
-
-.show-projects {
-	background-color: black;
+.spaces-skills {
+  margin: 50px 0;
+}
+.spaces-tech-know {
+  margin-top: 50px;
+}
+.spaces-contact-me {
+  margin: 50px 0;
+}
+.divider {
+  margin-top: -30px !important;
 }
