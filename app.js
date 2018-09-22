@@ -1,20 +1,3 @@
-// email.addEventListener('click', () => {
-// 	window.open('', '_blank');
-// });
-
-// cv.addEventListener('click', () => {
-// 	window.open('https://drive.google.com/file/d/18uThgz23Ym77bPXhyskluYvJqKICGzvh/view', '_blank');
-// });
-
-// github.addEventListener('click', () => {
-// 	window.open('https://github.com/AnaflaviaDiaz', '_blank');
-// });
-
-// linkedin.addEventListener('click', () => {
-// 	window.open('https://www.linkedin.com/in/anaflavia-diaz/', '_blank');
-// });
-
-
 const repoSalutem = 'https://github.com/AnaflaviaDiaz/lim-2018-05-bc-core-am-socialnetwork';
 const repoFoodmap = 'https://github.com/AnaflaviaDiaz/lim-2018-01-foodmap';
 const repoVisitor = 'https://github.com/AnaflaviaDiaz/wework';
@@ -49,7 +32,7 @@ const openPage = (route) => {
 };
 
 const sendEmail = () => {
-  
+  window.open('mailto:anaflaviadiazmartel5a@gmail.com');
 }
 
 btnRepoSalutem.addEventListener('click', () => openPage(repoSalutem));
@@ -65,7 +48,7 @@ btnDemoEdutic.addEventListener('click', () => openPage(demoEdutic));
 btnLinkedln.addEventListener('click', () => openPage(linkLinkedln));
 btnGithub.addEventListener('click', () => openPage(linkGithub));
 btnCV.addEventListener('click', () => openPage(linkCV));
-// btnEmail.addEventListener('click', () => openPage(linkLinkedln));
+btnEmail.addEventListener('click', () => sendEmail());
 
 document.addEventListener('DOMContentLoaded', function () {
   const sidenav = document.querySelectorAll('.sidenav');
