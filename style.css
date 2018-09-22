@@ -82,6 +82,15 @@ ul h4 {
 	margin: 0 5px;
 	font-style: italic;
 }
+.spaces-top {
+	margin-top: 10px;
+}
+.project-mobile {
+	display: none;
+}
+.project-desktop {
+	display: block;
+}
 
 /* ------------section skills---------- */
 .primary-words {
@@ -116,10 +125,10 @@ ul h4 {
 .spaces-description {
   margin: 40px 0;
 }
-.spaces-skills {
-  margin-top: 50px;
+.spaces-description-mobile {
+  margin: 20px 0;
 }
-.spaces-tech-know {
+.spaces-tech-know, .spaces-skills {
   margin-top: 50px;
 }
 .spaces-contact-me {
@@ -127,4 +136,13 @@ ul h4 {
 }
 .divider {
   margin-top: -30px !important;
+}
+
+@media only screen and (max-width: 992px) {
+	.project-mobile {
+		display: block;
+	}
+	.project-desktop {
+		display: none;
+	}
 }

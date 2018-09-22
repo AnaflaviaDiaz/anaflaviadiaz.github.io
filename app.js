@@ -22,6 +22,15 @@ const btnDemoFoodmap = document.getElementById('btn-demo-foodmap');
 const btnDemoVisitor = document.getElementById('btn-demo-visitor');
 const btnDemoEdutic = document.getElementById('btn-demo-edutic');
 
+const btnRepoFoodmapMb = document.getElementById('btn-repo-foodmap-mobile');
+const btnDemoFoodmapMb = document.getElementById('btn-demo-foodmap-mobile');
+const btnRepoSalutemMb = document.getElementById('btn-repo-salutem-mobile');
+const btnDemoSalutemMb = document.getElementById('btn-demo-salutem-mobile');
+const btnRepoVisitorMb = document.getElementById('btn-repo-visitor-mobile');
+const btnDemoVisitorMb = document.getElementById('btn-demo-visitor-mobile');
+const btnRepoEduticMb = document.getElementById('btn-repo-edutic-mobile');
+const btnDemoEduticMb = document.getElementById('btn-demo-edutic-mobile');
+
 const btnLinkedln = document.getElementById('linkedin');
 const btnGithub = document.getElementById('github');
 const btnCV = document.getElementById('cv');
@@ -45,10 +54,20 @@ btnDemoFoodmap.addEventListener('click', () => openPage(demoFoodmap));
 btnDemoVisitor.addEventListener('click', () => openPage(demoVisitor));
 btnDemoEdutic.addEventListener('click', () => openPage(demoEdutic));
 
+btnRepoSalutemMb.addEventListener('click', () => openPage(repoSalutem));
+btnRepoFoodmapMb.addEventListener('click', () => openPage(repoFoodmap));
+btnRepoVisitorMb.addEventListener('click', () => openPage(repoVisitor));
+btnRepoEduticMb.addEventListener('click', () => openPage(repoEdutic));
+
 btnLinkedln.addEventListener('click', () => openPage(linkLinkedln));
 btnGithub.addEventListener('click', () => openPage(linkGithub));
 btnCV.addEventListener('click', () => openPage(linkCV));
 btnEmail.addEventListener('click', () => sendEmail());
+
+btnDemoSalutemMb.addEventListener('click', () => openPage(demoSalutem));
+btnDemoFoodmapMb.addEventListener('click', () => openPage(demoFoodmap));
+btnDemoVisitorMb.addEventListener('click', () => openPage(demoVisitor));
+btnDemoEduticMb.addEventListener('click', () => openPage(demoEdutic));
 
 document.addEventListener('DOMContentLoaded', function () {
   const sidenav = document.querySelectorAll('.sidenav');
