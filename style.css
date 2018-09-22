@@ -27,7 +27,8 @@ section[class^="bg"] {
 	width: 50px;
 }
 ul li a:hover{
-	background-color: #a1a1a1;
+	/* background-color: #a1a1a1; */
+	background-color: #00e5ff;
 }
 
 /* navbar-mobile */
@@ -42,7 +43,8 @@ ul h4 {
 	width: 30%;
 }
 .sidenav li>a:hover {
-	background-color: #a1a1a1;
+	/* background-color: #a1a1a1; */
+	background-color: #00e5ff;
 	color: black;
 }
 .sidenav li>a, ul h4 {
@@ -145,4 +147,8 @@ ul h4 {
 	.project-desktop {
 		display: none;
 	}
+}
+
+.btn.cyan.darken-1:hover, ul.btn.cyan.darken-1 li:hover {
+	background-color: #00e5ff !important
 }
