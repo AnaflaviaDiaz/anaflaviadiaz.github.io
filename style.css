@@ -18,6 +18,7 @@ section[class^="bg"] {
 	font-size: 4.5rem !important;
 	font-weight: bold !important;
 	font-family: Lato;
+	margin-left: 10px;
 }
 .nav-items {
 	font-size: 1.5rem !important;
@@ -57,7 +58,7 @@ ul h4 {
 	height: 100vh;
 }
 .presentation {
-	font-family: Lato;
+	/* font-family: Lato; */
 	color: white;
 	text-align: center;
 	width: 100%;
@@ -116,7 +117,7 @@ ul h4 {
   margin: 40px 0;
 }
 .spaces-skills {
-  margin: 50px 0;
+  margin-top: 50px;
 }
 .spaces-tech-know {
   margin-top: 50px;

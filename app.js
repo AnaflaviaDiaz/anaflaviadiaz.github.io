@@ -68,8 +68,8 @@ btnCV.addEventListener('click', () => openPage(linkCV));
 // btnEmail.addEventListener('click', () => openPage(linkLinkedln));
 
 document.addEventListener('DOMContentLoaded', function () {
-  const elems = document.querySelectorAll('.sidenav');
-  const elemsP = document.querySelectorAll('.parallax');
-  M.Parallax.init(elemsP);
-  M.Sidenav.init(elems);
+  const sidenav = document.querySelectorAll('.sidenav');
+  const scrollspy = document.querySelectorAll('.scrollspy');
+  M.Sidenav.init(sidenav);
+  M.ScrollSpy.init(scrollspy);
 });
