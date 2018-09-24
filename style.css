@@ -37,10 +37,15 @@ ul h4 {
 }
 .brand-logo-mobile {
 	text-align: center;
-	align-content: center
+	align-content: center;
+	cursor: default !important;
+}
+ul a {
+	cursor: default !important;
 }
 .img-logo-mobile {
 	width: 30%;
+	cursor: default !important;
 }
 .sidenav li>a:hover {
 	/* background-color: #a1a1a1; */
