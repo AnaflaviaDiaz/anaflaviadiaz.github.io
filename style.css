@@ -84,6 +84,10 @@ ul h4 {
 	margin: 0 5px;
 	font-style: italic;
 }
+.spaces-left-btn {
+	margin: 0 14px;
+	font-style: italic;
+}
 .spaces-top {
 	margin-top: 10px;
 }
@@ -92,6 +96,12 @@ ul h4 {
 }
 .project-desktop {
 	display: block;
+}
+.align-inline {
+	display: inline-block;
+}
+.text-description-color {
+	color: #00acc1;
 }
 
 /* ------------section skills---------- */
@@ -120,6 +130,9 @@ ul h4 {
 .pad-49 {
   padding: 49px 0 !important;
 }
+.pad-14 {
+  padding: 14px 0 !important;
+}
 
 .spaces-title {
   margin-bottom: 50px !important;
@@ -134,6 +147,9 @@ ul h4 {
   margin-top: 50px;
 }
 .spaces-contact-me {
+  margin-top: 60px;
+}
+.spaces-about-me {
   margin-top: 60px;
 }
 .divider {
