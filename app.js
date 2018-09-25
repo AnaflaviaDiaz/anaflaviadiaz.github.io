@@ -10,7 +10,7 @@ const demoEdutic = 'https://anaflaviadiaz.github.io/lim-2018-01-social-network-f
 
 const linkLinkedln = 'https://www.linkedin.com/in/anaflavia-diaz/';
 const linkGithub = 'https://github.com/AnaflaviaDiaz';
-const linkCV = 'https://drive.google.com/file/d/1F77eE2hMRuAd2BABvdV8YIF4lbrH6XBl/view';
+const linkCV = 'https://drive.google.com/file/d/1aX4d29muegnS7UXNkq0DTXFPazqZqxpy/view';
 
 const btnRepoSalutem = document.getElementById('btn-repo-salutem');
 const btnRepoFoodmap = document.getElementById('btn-repo-foodmap');
