@@ -85,7 +85,8 @@ ul a {
 /* ----- section about me-------- */
 picture img {
 	border-radius: 50%;
-	width: 50%
+	width: 80%;
+	margin-top: 20px;
 }
 .justify {
 	text-align: justify;
@@ -134,6 +135,9 @@ picture img {
 #linkedin:hover, #github:hover, #cv:hover, #gmail:hover {
   cursor: pointer;
 }
+.collapse {
+	border-collapse: collapse;
+}
 
 /* color principal */
 /* background-color: #809eb2; */
@@ -179,6 +183,10 @@ picture img {
 	}
 	.project-desktop {
 		display: none;
+	}
+	picture img {
+		border-radius: 50%;
+		width: 90%
 	}
 }
 
