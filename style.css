@@ -26,6 +26,7 @@ section[class^="bg"] {
 .img-logo-nav {
 	width: 50px;
 }
+
 ul li a:hover{
 	/* background-color: #a1a1a1; */
 	background-color: #00e5ff;
