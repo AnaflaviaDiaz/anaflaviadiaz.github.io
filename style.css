@@ -86,9 +86,10 @@ ul a {
 /* ----- section about me-------- */
 picture img {
 	border-radius: 50%;
-	width: 80%;
-	margin-top: 20px;
+	width: 70%;
+	margin-top: 35px;
 }
+
 .justify {
 	text-align: justify;
 }
@@ -185,6 +186,23 @@ picture img {
 	.project-desktop {
 		display: none;
 	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 992px) {
+	picture img {
+		border-radius: 50%;
+		width: 35%
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 889px) {
+	picture img {
+		border-radius: 50%;
+		width: 35%
+	}
+}
+
+@media only screen and  (max-width: 700px) {
 	picture img {
 		border-radius: 50%;
 		width: 90%
