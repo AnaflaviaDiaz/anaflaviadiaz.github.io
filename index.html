@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/animate.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./css/materialize.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,51 +15,55 @@
 
 <body>
   <!-- navbar -->
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper cyan darken-1">
-        <a href="#!" class="brand-logo "><img class="img-logo-nav" src="usb.png" alt=""></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#tech-know">Conocimientos Técnicos</a></li>
-          <li><a href="#contact-me">Contáctame</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <!-- version mobile -->
-  <ul class="sidenav cyan darken-1 center" id="mobile-demo">
-    <a href="#!" class="brand-logo-mobile"><img class="img-logo-mobile" src="usb.png" alt=""></a>
-    <h4>Anaflavia</h4>
-    <li><a href="#portfolio">Portafolio</a></li>
-    <li><a href="#skills">Habilidades</a></li>
-    <li><a href="#tech-know">Conocimientos Técnicos</a></li>
-    <li><a href="#contact-me">Contáctame</a></li>
-  </ul>
-
   <header>
-    <div class="background-main">
-      <div class="prueba">
-        <div class="presentation">
-          <h1>ANAFLAVIA</h1>
-          <h2>Front-end Developer</h2>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper cyan darken-1">
+          <a href="#!" class="brand-logo"><img class="img-logo-nav" src="usb.png" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#portfolio" class="bold">Portafolio</a></li>
+            <li><a href="#about-me" class="bold">Sobre Mí</a></li>
+            <li><a href="#tech-know" class="bold">Herramientas de Desarrollo</a></li>
+            <li><a href="#skills" class="bold">Habilidades</a></li>
+            <li><a href="#contact-me" class="bold">Contáctame</a></li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <section id="portfolio" class="container">
+  <!-- version mobile -->
+  <ul class="sidenav cyan darken-1 center" id="mobile-demo">
+    <a class="brand-logo-mobile"><img class="img-logo-mobile" src="usb.png" alt=""></a>
+    <h4>Anaflavia</h4>
+    <li><a href="#portfolio">Portafolio</a></li>
+    <li><a href="#about-me">Sobre Mí</a></li>
+    <li><a href="#tech-know">Herramientas de Desarrollo</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#contact-me">Contáctame</a></li>
+  </ul>
+
+  <main>
+    <div class="background-main">
+      <div class="prueba">
+        <div class="presentation">
+          <h1 class="animated bounceInRight delay-3s">ANAFLAVIA</h1>
+          <h2 class="animated bounceInRight delay-3s">Front-end Developer</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="portfolio" class="container section scrollspy">
     <div class="row">
       <div class="col s12 center">
         <h2 class="spaces-title">Portafolio</h2>
         <div class="divider cyan darken-1"></div>
       </div>
-      <!-- foodmap -->
-      <div class="col s12 pad-49">
-        <div class="col s12 l7 center">
+      <!-- foodmap web-->
+      <div class="col s12 pad-49 project-desktop">
+        <div class="col s12 m6 l7 center">
           <img class="screen-desktop" src="assets/projects-devices/foodmap-desktop.png" alt="foodmap">
           <ul class="pagination">
             <li class="spaces-left chip">Javascript</li>
@@ -67,36 +71,91 @@
             <li class="spaces-left chip">AJAX</li>
           </ul>
         </div>
-        <div class="col s12 l5 center">
+        <div class="col s12 m6 l5 center">
           <h4>FoodMap</h4>
-          <h6 class="spaces-description">Una aplicación que te ayuda a encontrar la ubicación de restaurantes en el distrito de Miraflores y sus
-            especialidades.
-          </h6>
+          <p>Una aplicación que te ayuda a encontrar la ubicación de restaurantes en el
+            distrito de Miraflores y sus especialidades.
+          </p>
+          <p><strong>Reto:</strong> Realizar la aplicación en 2 días usando XHR y enlazar restaurantes de Miraflores
+            con Google Maps.</p>
           <div>
-            <button class="btn waves-effect waves-light cyan darken-1" type="button" name="action" id="btn-demo-foodmap">
-              <i class="material-icons">remove_red_eye</i>
-            </button>
-            <button class="btn waves-effect waves-light cyan darken-1" type="button" name="action" id="btn-repo-foodmap">
-              <i class="material-icons">code</i>
-            </button>
+            <ul>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-demo-foodmap">
+                  <i class="material-icons">remove_red_eye</i>
+                </button>
+                <h6 class="text-description-color">Demo</h6>
+              </li>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-repo-foodmap">
+                  <i class="material-icons">code</i>
+                </button>
+                <h6 class="text-description-color">Repositorio</h6>
+              </li>
+            </ul>
+          </div>
+          <div>
           </div>
         </div>
       </div>
-      <!-- salutem -->
-      <div class="col s12 pad-49">
+      <!-- foodmap mobile-->
+      <div class="col s12 pad-14 project-mobile">
+        <div class="col s12 center">
+          <h4>FoodMap</h4>
+          <h6 class="spaces-description-mobile">Una aplicación que te ayuda a encontrar la ubicación de restaurantes en
+            el distrito de Miraflores y sus especialidades.
+          </h6>
+          <img class="screen-desktop" src="assets/projects-devices/foodmap-desktop.png" alt="foodmap">
+          <ul class="pagination">
+            <li class="spaces-left chip">Javascript</li>
+            <li class="spaces-left chip">Bulma</li>
+            <li class="spaces-left chip">AJAX</li>
+          </ul>
+          <div>
+            <ul>
+              <li class="align-inline  spaces-left-btn">
+                <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                  id="btn-demo-foodmap-mobile">
+                  <i class="material-icons">remove_red_eye</i>
+                </button>
+                <h5 class="text-description-color">Demo</h5>
+              </li>
+              <li class="align-inline  spaces-left-btn">
+                <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                  id="btn-repo-foodmap-mobile">
+                  <i class="material-icons">code</i>
+                </button>
+                <h5 class="text-description-color">Repositorio</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- salutem web -->
+      <div class="col s12 pad-49 project-desktop">
         <div class="col s12 l5 center">
           <h4>Salutem</h4>
-          <h6 class="spaces-description">Una red social que nace de la necesidad de compartir experiencias sobre temas salud.
-          </h6>
+          <p>Una red social que nace de la necesidad de compartir experiencias sobre temas
+            de salud.
+          </p>
+          <p><strong>Reto:</strong> Aprender y usar los servicios de Firebase como autenticación de cuentas de Google
+            y
+            Facebook, registro de usuarios y post en Base de Datos en Tiempo Real, actualización y eliminación de posts</p>
           <div>
-            <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action"
-              id="btn-demo-salutem">
-              <i class="material-icons">remove_red_eye</i>
-            </button>
-            <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action"
-              id="btn-repo-salutem">
-              <i class="material-icons">code</i>
-            </button>
+            <ul>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-demo-salutem">
+                  <i class="material-icons">remove_red_eye</i>
+                </button>
+                <h6 class="text-description-color">Demo</h6>
+              </li>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-repo-salutem">
+                  <i class="material-icons">code</i>
+                </button>
+                <h6 class="text-description-color">Repositorio</h6>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="col s12 l7 center">
@@ -107,10 +166,43 @@
             <li class="spaces-left chip">Javascript</li>
           </ul>
         </div>
-
       </div>
-      <!-- visitor -->
-      <div class="col pad-49 s12">
+      <!-- salutem mobile-->
+      <div class="col s12 pad-14 project-mobile">
+        <div class="col s12 center">
+          <h4>Salutem</h4>
+          <h6 class="spaces-description-mobile">Una red social que nace de la necesidad de compartir experiencias sobre
+            temas
+            salud.
+          </h6>
+          <img class="screen-desktop" src="assets/projects-devices/salutem-desktop.png" alt="foodmap">
+          <ul class="pagination">
+            <li class="spaces-left chip">Firebase</li>
+            <li class="spaces-left chip">Materialize</li>
+            <li class="spaces-left chip">Javascript</li>
+          </ul>
+          <div>
+            <ul>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                  id="btn-demo-salutem-mobile">
+                  <i class="material-icons">remove_red_eye</i>
+                </button>
+                <h5 class="text-description-color">Demo</h5>
+              </li>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                  id="btn-repo-salutem-mobile">
+                  <i class="material-icons">code</i>
+                </button>
+                <h5 class="text-description-color">Repositorio</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- visitor web-->
+      <div class="col pad-49 s12 project-desktop">
         <div class="col s12 l7 center">
           <img class="screen-desktop" src="assets/projects-devices/visitor-desktop.png" alt="visitor">
           <ul class="pagination">
@@ -122,20 +214,88 @@
         </div>
         <div class="col s12 l5 center">
           <h4>Visitor</h4>
-          <h6 class="spaces-description">Registro de Visitantes para la recepción de Comunal Coworking de Barranco.
-          </h6>
+          <p>Registro de Visitantes para la recepción de Comunal Coworking de Barranco.
+          </p>
+          <p><strong>Reto:</strong> Integrar el servicio de Cámara de los dispositivos móviles y de escritorio, además
+            de usar Madrill como servicio de mensajería personalizado para comunicarse con las oficinas de Comunal.</p>
           <div>
-            <button class="btn waves-effect waves-light cyan darken-1" type="button" name="action" id="btn-demo-visitor">
-              <i class="material-icons">remove_red_eye</i>
-            </button>
-            <button class="btn waves-effect waves-light cyan darken-1" type="button" name="action" id="btn-repo-visitor">
-              <i class="material-icons">code</i>
-            </button>
+            <ul>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-demo-visitor">
+                  <i class="material-icons">remove_red_eye</i>
+                </button>
+                <h6 class="text-description-color">Demo</h6>
+              </li>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-repo-visitor">
+                  <i class="material-icons">code</i>
+                </button>
+                <h6 class="text-description-color">Repositorio</h6>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- edutic -->
-      <div class="col s12 pad-49">
+      <!-- visitor mobile-->
+      <div class="col s12 pad-14 project-mobile">
+        <div class="col s12 center">
+          <h4>Visitor</h4>
+          <h6 class="spaces-description-mobile">Registro de Visitantes para la recepción de Comunal Coworking de
+            Barranco.
+          </h6>
+          <img class="screen-desktop" src="assets/projects-devices/visitor-desktop.png" alt="foodmap">
+          <ul class="pagination">
+            <li class="chip">Javascript</li>
+            <li class="chip">Firebase</li>
+            <li class="chip">Bootstrap</li>
+            <li class="chip">Mandrill</li>
+          </ul>
+          <div>
+            <ul>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                  id="btn-demo-visitor-mobile">
+                  <i class="material-icons">remove_red_eye</i>
+                </button>
+                <h5 class="text-description-color">Demo</h5>
+              </li>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                  id="btn-repo-visitor-mobile">
+                  <i class="material-icons">code</i>
+                </button>
+                <h5 class="text-description-color">Repositorio</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- edutic web-->
+      <div class="col s12 pad-49 project-desktop">
+        <div class="col s12 l5 center">
+          <h4>EduTic</h4>
+          <p>Una red social sobre educación donde puedes compartir intereses y herramientas
+            para aprender nuevas tecnologías y tendencias.
+          </p>
+          <p><strong>Reto:</strong> Aprender y usar Angular con Typescript en 2 semanas utilizando los servicios de
+            Firebase de autenticación, base de datos en tiempo real y almacenamiento de fotos.</p>
+          <div>
+            <ul>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-demo-edutic">
+                  <i class="material-icons">remove_red_eye</i>
+                </button>
+                <h6 class="text-description-color">Demo</h6>
+              </li>
+              <li class="align-inline spaces-left-btn">
+                <button class="btn waves-effect waves-light cyan darken-1 spaces-left" type="button" name="action" id="btn-repo-edutic">
+                  <i class="material-icons">code</i>
+                </button>
+                <h6 class="text-description-color">Repositorio</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="col s12 l7 center">
           <img class="screen-desktop" src="assets/projects-devices/edutic-desktop.png" alt="edutic">
           <ul class="pagination">
@@ -145,139 +305,188 @@
             <li class="spaces-left chip">Typescript</li>
           </ul>
         </div>
-        <div class="col s12 l5 center">
-          <h4>EduTic</h4>
-          <h6 class="spaces-description">Una red social sobre educación donde puedes compartir intereses y herramientas para aprender nuevas
-            tecnologías
-            y tendencias.
-          </h6>
-          <div>
-            <button class="btn waves-effect waves-light cyan darken-1" type="button" name="action" id="btn-demo-edutic">
-              <i class="material-icons">remove_red_eye</i>
-            </button>
-            <button class="btn waves-effect waves-light cyan darken-1" type="button" name="action" id="btn-repo-edutic">
-              <i class="material-icons">code</i>
-            </button>
-          </div>
+      </div>
+    </div>
+    <!-- edutic mobile-->
+    <div class="col s12 pad-14 project-mobile">
+      <div class="col s12 center">
+        <h4>Edutic</h4>
+        <h6 class="spaces-description-mobile">Una red social sobre educación donde puedes compartir intereses y
+          herramientas
+          para aprender nuevas
+          tecnologías
+          y tendencias.
+        </h6>
+        <img class="screen-desktop" src="assets/projects-devices/edutic-desktop.png" alt="foodmap">
+        <ul class="pagination">
+          <li class="chip">Typescript</li>
+          <li class="chip">Angular</li>
+          <li class="chip">Bootstrap</li>
+          <li class="chip">Firebase</li>
+        </ul>
+        <div>
+          <ul>
+            <li class="align-inline spaces-left-btn">
+              <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                id="btn-demo-edutic-mobile">
+                <i class="material-icons">remove_red_eye</i>
+              </button>
+              <h5 class="text-description-color">Demo</h5>
+            </li>
+            <li class="align-inline spaces-left-btn">
+              <button class="btn btn-large waves-effect waves-light cyan darken-1 spaces-top" type="button" name="action"
+                id="btn-repo-edutic-mobile">
+                <i class="material-icons">code</i>
+              </button>
+              <h5 class="text-description-color">Repositorio</h5>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-
   </section>
 
-  <section class="bg-secondary" id="skills">
+  <section class="bg-secondary section scrollspy" id="about-me">
+    <div class="container center row">
+      <h2 class="spaces-title">Sobre Mí</h2>
+      <div class="divider cyan darken-1"></div>
+    </div>
+    <div class="row container justify">
+      <div class="col s12 m12 l6 center">
+        <picture>
+          <img src="assets/profile/rocas.jpg" alt="">
+        </picture>
+      </div>
+      <div class="col s12 m12 l6">
+        <h6 class="center"><i>Soy una Front-end Developer</i></h6>
+        <p class="primary-words">Contruyo aplicaciones web e híbridas, me gusta
+          crear soluciones
+          innovadoras para el mundo digital buscando los mejores resultados por lo que estoy en constante
+          aprendizaje, todos los días hay algo nuevo que aprender. Tengo una gran actitud para adaptarme a los retos.</p>
+        <p class="primary-words">Mi objetivo es aportar y comprometerme en un lugar donde pueda desarrollarme y crecer
+          profesionalmente
+          por lo que busco oportunidades que me permitan hacerlo. Mi aspiración es ser una Full-stack Developer y en el
+          camino ir aprendiendo Machine Learning. </p>
+        <p class="primary-words">Cuando no estoy al frente de una computadora, probablemente estoy
+          viendo el mar o
+          caminando en una playa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech-know" class="section scrollspy">
+    <div class="container row center">
+      <h2 class="spaces-title">Herramientas de Desarrollo</h2>
+      <div class="divider cyan darken-1"></div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Javascript</h5>
+        <img src="assets/icons-tech/javascript.jpg">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Typescript</h5>
+        <img src="assets/icons-tech/typescript.png">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Angular</h5>
+        <img src="assets/icons-tech/angular.png">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Firebase</h5>
+        <img src="assets/icons-tech/firebase.png">
+      </div>
+    </div>
+    <div class="container row center">
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Git</h5>
+        <img src="assets/icons-tech/git.png">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>GitHub</h5>
+        <img src="assets/icons-tech/github.jpg">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Bitbucket</h5>
+        <img src="assets/icons-tech/bitbucket.png">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>NPM</h5>
+        <img src="assets/icons-tech/npm.png">
+      </div>
+    </div>
+    <div class="container row center">
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Jest</h5>
+        <img src="assets/icons-tech/jest.png">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Bootstrap</h5>
+        <img src="assets/icons-tech/bootstrap.png">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Materialize</h5>
+        <img src="assets/icons-tech/materialize.png">
+      </div>
+      <div class="col s6 m3 spaces-tech-know">
+        <h5>Bulma</h5>
+        <img src="assets/icons-tech/bulma.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-secondary section scrollspy" id="skills">
     <div class="container row center">
       <h2 class="spaces-title">Habilidades</h2>
       <div class="divider cyan darken-1"></div>
       <div class="primary-words col s12 m4 spaces-skills">
-        <img src="assets/icons-skills/handshake.png" alt="commitment">
+        <img src="assets/icons-skills/compromiso.png" alt="commitment">
         <h5>Compromiso</h5>
       </div>
       <div class="primary-words col s12 m4 spaces-skills">
-        <img src="assets/icons-skills/meeting.png" alt="teamwork">
+        <img src="assets/icons-skills/grupo.png" alt="teamwork">
         <h5>Trabajo en Equipo</h5>
       </div>
       <div class="primary-words col s12 m4 spaces-skills">
-        <img src="assets/icons-skills/decision-making.png" alt="adaptability">
+        <img src="assets/icons-skills/adaptabilidad.png" alt="adaptability">
         <h5>Adaptabilidad</h5>
       </div>
     </div>
     <div class="container row center">
       <div class="primary-words col s12 m4 spaces-skills">
-        <img src="assets/icons-skills/worldwide.png" alt="self-learning">
+        <img src="assets/icons-skills/aprendizaje.png" alt="self-learning">
         <h5>Autoaprendizaje</h5>
       </div>
       <div class="primary-words col s12 m4 spaces-skills">
-        <img src="assets/icons-skills/clock.png" alt="puntuality">
+        <img src="assets/icons-skills/reloj.png" alt="puntuality">
         <h5>Puntualidad</h5>
       </div>
       <div class="primary-words col s12 m4 spaces-skills">
-        <img src="assets/icons-skills/report.png" alt="responsibility">
+        <img src="assets/icons-skills/resposanbilidad.png" alt="responsibility">
         <h5>Responsabilidad</h5>
       </div>
     </div>
   </section>
 
-  <section id="tech-know">
-    <div class="container row center">
-      <h2 class="spaces-title">Conocimientos Técnicos</h2>
-      <div class="divider cyan darken-1"></div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Javascript</h5>
-        <img src="assets/icons-tech/javascript.jpg">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Typescript</h5>
-        <img src="assets/icons-tech/typescript.png">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Angular</h5>
-        <img src="assets/icons-tech/angular.png">
-      </div>
-    </div>
-    <div class="container row center">
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Bootstrap</h5>
-        <img src="assets/icons-tech/bootstrap.png">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Materialize</h5>
-        <img src="assets/icons-tech/materialize.png">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Bulma</h5>
-        <img src="assets/icons-tech/bulma.png">
-      </div>
-    </div>
-    <div class="container row center">
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Git</h5>
-        <img src="assets/icons-tech/git.png">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>GitHub</h5>
-        <img src="assets/icons-tech/github.jpg">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Bitbucket</h5>
-        <img src="assets/icons-tech/bitbucket.png">
-      </div>
-    </div>
-    <div class="container row center">
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Firebase</h5>
-        <img src="assets/icons-tech/firebase.png">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>Jest</h5>
-        <img src="assets/icons-tech/jest.png">
-      </div>
-      <div class="col s12 m4 spaces-tech-know">
-        <h5>NPM</h5>
-        <img src="assets/icons-tech/npm.png">
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-secondary" id="contact-me">
+  <section class="section scrollspy" id="contact-me">
     <div class="container center row">
       <h2 class="spaces-title">Contacto</h2>
       <div class="divider cyan darken-1"></div>
-      <div class="col s12 m6 l3 center spaces-contact-me" id="linkedin">
+      <div class="col s4 m4 l4 center spaces-contact-me" id="linkedin">
         <img src="https://png.icons8.com/ios/50/00ACC1/linkedin-filled.png">
-        <p>anaflavia-diaz</p>
+        <h6>anaflavia-diaz</h6>
       </div>
-      <div class="col s12 m6 l3 center spaces-contact-me" id="github">
-        <img src="https://png.icons8.com/ios/50/00ACC1/github-filled.png">
-        <p>AnaflaviaDiaz</p>
-      </div>
-      <div class="col s12 m6 l3 center spaces-contact-me" id="cv">
+      <div class="col s4 m4 l4 center spaces-contact-me" id="cv">
         <img src="https://png.icons8.com/ios/50/00ACC1/resume-filled.png">
-        <p>CV</p>
+        <h6>CV</h6>
       </div>
-      <div class="col s12 m6 l3 center spaces-contact-me" id="gmail">
+      <div class="col s4 m4 l4 center spaces-contact-me" id="github">
+        <img src="https://png.icons8.com/ios/50/00ACC1/github-filled.png">
+        <h6>AnaflaviaDiaz</h6>
+      </div>
+    </div>
+    <div class="container center row">
+      <div class="col s12 center spaces-contact-me" id="gmail">
         <img src="https://png.icons8.com/ios/50/00ACC1/new-post-filled.png">
-        <p>anaflaviadiazmartel5a@gmail.com</p>
+        <h6>anaflaviadiazmartel5a@gmail.com</h6>
       </div>
     </div>
   </section>
